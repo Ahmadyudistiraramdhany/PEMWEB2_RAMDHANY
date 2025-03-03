@@ -51,7 +51,7 @@
             </div> 
             <div class="form-group row">
                 <div class="offset-4 col-8">
-                    <button name="submit" type="submit" class="btn btn-primary">Simpan</button>
+                    <button name="submit" type="submit" class="btn btn-primary">simpan</button>
                 </div>
             </div>
         </form>

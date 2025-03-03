@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     $nilai_uas = $_POST['nilai_uas'];
     $nilai_tugas = $_POST['nilai_tugas'];
 
-    // untuk menghitung nilai total
+    // Untuk menghitung nilai total
     $nilai_total = $nilai_uts * 0.3 + $nilai_uas * 0.35 + $nilai_tugas * 0.35;
 
     // untuk menententukan status kelulusan
