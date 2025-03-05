@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indah Nusantara</title>
+    <link rel="stylesheet" href="projek.css">
+</head>
+<body>
+    <header>
+    <div class="slideshow-container">
+        <h1>Indah Nusantara</h1>
+        <div class="mySlides fade">
+            <img src="bahan/foto1.jpg" alt="Gambar 1" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="bahan/foto2.jpg" alt="Gambar 2" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="bahan/foto3.jpg" alt="Gambar 3" style="width:100%">
+        </div>  
+    </div>
+
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3000); 
+}
+    </script>
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Indah Nusantara</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#destinasi">Destinasi</a></li>
+                <li><a href="#paket-wisata">Paket Wisata</a></li>
+                <li><a href="#pengembang">Pengembang Web</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="tentang-kami" class="tentang-kami">
+            <h1>Tentang Kami</h1>
+            <p>
+                Indah Nusantara adalah penyedia jasa tour wisata Indonesia untuk wisatawan yang ingin pergi berlibur. Wisatawan domestik maupun turis mancanegara berdatangan ke tempat-tempat wisata di Indonesia yang eksotis.
+                Destinasi wisata yang disediakan oleh Indah Nusantara kini menjadi tujuan wisata terfavorit di Indonesia. Kami menyediakan berbagai wisata di Bali, Gunung Bromo, Labuan Bajo, dan Yogyakarta.
+            </p>
+        </section>
+
+        <section id="destinasi" class="destinasi">
+            <h2>Destinasi Favorit</h2>
+            <div class="destinasi-item">
+                <img src="bahan/foto2.jpg" alt="Destinasi 1">
+                <h3>Bali</h3>
+                <p>Bali adalah destinasi wisata terkenal dunia dengan keindahan alam dan budaya Hindu yang unik.</p>
+            </div>
+            <div class="destinasi-item">
+                <img src="bahan/foto3.jpg" alt="Destinasi 2">
+                <h3>Gunung Bromo</h3>
+                <p>Gunung Bromo di Probolinggo terkenal dengan pemandangan luar biasa dan kawah yang indah.</p>
+            </div>
+            <div class="destinasi-item">
+                <img src="bahan/foto4.jpg" alt="Destinasi 3">
+                <h3>Labuan Bajo</h3>
+                <p>Labuan Bajo adalah gerbang menuju Taman Nasional Komodo dengan keindahan alam yang mempesona.</p>
+            </div>
+            <div class="destinasi-item">
+                <img src="bahan/foto6.jpg" alt="Destinasi 4">
+                <h3>Yogyakarta</h3>
+                <p>Yogyakarta terkenal dengan destinasi sejarah dan budaya seperti Candi Borobudur dan Malioboro.</p>
+            </div>
+        </section>
+      <section id="paket-wisata" class="paket">
+        <h2>Paket Wisata</h2>
+        <div class="container">
+            <div class="wisata">
+                <div class="foto-wisata">
+                    <img src="bahan/foto5.jpg" alt="paket wisata 1 - foto 1">
+                    <img src="bahan/foto7.jpg" alt="paket wisata 1 - foto 2">
+                    <img src="bahan/foto2.jpg" alt="paket wisata 1 - foto 3">
+                </div>
+                <h3>Paket 1</h3>
+                <p>Harga: Rp.2.500.000/orang</p>
+                <p>waktu: 3 hari</p>
+                <p>Destinasi: pantai kuta, pura uluwatu, pulau dewata (sudah termasuk biaya inap dan tourguide)</p>
+                <a href="#pesan-sekarang"><button>Pesan Sekarang</button></a>
+            </div>
+            <div class="wisata">
+                <div class="foto-wisata">
+                    <img src="bahan/foto3.jpg" alt="paket wisata  2 - foto 4">
+                    <img src="bahan/foto8.webp" alt="paket wisata 2 - foto 5">
+                    <img src="bahan/foto9.jpg" alt="paket wisata  2 - foto 6">
+                </div>
+                <h3>Paket 2</h3>
+                <p>Harga: Rp.2.500.000/orang</p>
+                <p>waktu: 3 hari</p>
+                <p>Destinasi: Gunung bromo, Air terjun tubing, tumpak sewu (sudah termasuk biaya inap dan tourguide)</p>
+                <a href="#pesan-sekarang"><button>Pesan Sekarang</button></a>
+            </div>
+            <div class="wisata">
+                <div class="foto-wisata">
+                    <img src="bahan/foto12.jpg" alt="paket wisata 3 - foto 7">
+                    <img src="bahan/foto10.png" alt="paket wisata 3 - foto 8">
+                    <img src="bahan/foto4.jpg" alt="paket wisata  3 - foto 9">
+                </div>
+                <h3>Paket 3</h3>
+                <p>Harga: Rp.3.500.000/orang</p>
+                <p>waktu: 3 hari</p>
+                <p>Destinasi: labuan bojo, pulau komodo, pink beach (sudah termasuk biaya inap dan tourguide)</p>
+                <a href="#pesan-sekarang"><button>Pesan Sekarang</button></a>
+            </div>
+            <div class="wisata">
+                <div class="foto-wisata">
+                    <img src="bahan/foto6.jpg" alt="paket wisata  4 - foto 10">
+                    <img src="bahan/foto13.jpg" alt="paket wisata 4 - foto 11">
+                    <img src="bahan/foto14.jpg" alt="paket wisata 4 - foto 12">
+                </div>
+                <h3>Paket 4</h3>
+                <p>Harga: Rp.1.750.000/orang</p>
+                <p>waktu: 3 hari</p>
+                <p>Destinasi: candi boroubudur, malioboro, tebing breksi (sudah termasuk biaya inap dan tourguide)</p>
+                <a href="#pesan-sekarang"><button>Pesan Sekarang</button></a>
+            </div>
+        </div>
+        </section>
+        <section id="pesan-sekarang">
+            <h2>Formulir Pemesanan Paket Wisata</h2>
+        </section>
+        <form id="form-pemesanan" onsubmit="return handleSubmit(event)">
+            <p>Silakan isi formulir di bawah ini untuk memesan paket wisata pilihan Anda.</p>
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="paket">Pilih Paket Wisata:</label>
+                <select id="paket" name="paket" required>
+                    <option value="Paket 1">Paket 1 - Rp. 2.500.000/orang</option>
+                    <option value="Paket 2">Paket 2 - Rp. 2.500.000/orang</option>
+                    <option value="Paket 3">Paket 3 - Rp. 3.500.000/orang</option>
+                    <option value="Paket 4">Paket 4 - Rp. 1.750.000</option>
+                </select>
+
+                <label for="jumlah">Jumlah Orang:</label>
+                <input type="number" id="jumlah" name="jumlah_orang" min="1" required>
+
+                <label for="tanggal">Tanggal Keberangkatan:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+        </section>
+        <section class="terima-kasih" style="display: none;">
+            <h2><img src="path/to/your/image.jpg" alt="Terima Kasih" /></h2>
+            <p>Pesanan Anda telah kami terima. Kami akan segera menghubungi Anda untuk konfirmasi lebih lanjut.</p>
+            <p>Silakan cek email Anda untuk informasi lebih lanjut mengenai pemesanan paket wisata yang telah Anda pilih.</p>
+            <p><a href="#" id="hideSection">Kembali ke Beranda</a></p>
+        </section>
+        
+        <script>
+            // Fungsi untuk menampilkan terima kasih
+            function handleSubmit(event) {
+                event.preventDefault();
+                document.getElementById('pesan-sekarang').style.display = 'none'; // Menyembunyikan form atau elemen lain
+                document.querySelector('.terima-kasih').style.display = 'block'; // Menampilkan elemen terima kasih
+            }
+        
+            // Menyembunyikan kembali elemen terima kasih ketika tombol diklik
+            document.getElementById('hideSection').addEventListener('click', function(event) {
+                event.preventDefault();  // Mencegah tautan default
+                document.querySelector('.terima-kasih').style.display = 'none'; // Menyembunyikan terima kasih
+                document.getElementById('pesan-sekarang').style.display = 'block'; // Menampilkan form atau elemen lainnya
+            });
+        </script>
+        
+        <section id="pengembang" class="pengembang">
+            <h2>Pengembang Web</h2>
+            <img  src="bahan/fotosaya.jpg" alt="foto Pengembang">
+            <P>Nama  : Ahmad Yuditira Ramdhany</P>
+            <p>Rombel: TI 08</p>
+            <P>NIM   : 0110224005</P>
+            <p>Prodi : Pemrograman Web</p>
+        </section>
+        <footer>
+            <section id="kontak" class="kontak">
+                <h3>Kontak</h3>
+                <div class="medsos">
+                    <a href="https://wa.me/087845714215" target="_blank">
+                        <img src="bahan/wa.png" alt="WhatsApp" title="Hubungi kami melalui WhatsApp">
+                    </a>
+                    <a href="https://www.instagram.com/ahmdd_yudistira" target="_blank">
+                        <img src="bahan/ig.png" alt="Instagram" title="Follow kami di Instagram">
+                    </a>
+                    <a href="https://t.me/Ramdanee25" target="_blank">
+                        <img src="bahan/tele.png" alt="Telegram" title="Hubungi kami melalui Telegram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmad-yudistira-ramdhany-5b934633b" target="_blank">
+                        <img src="bahan/linkedin.png" alt="linkedin" title="Hubungi kami melalui linkedin">
+                    </a> 
+                </div>
+               </section>
+            <p>&copy; 2024 Indah Nusantara. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
+    </main>
+</body>
+</html>

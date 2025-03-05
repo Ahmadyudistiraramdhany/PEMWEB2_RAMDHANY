@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ID">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Indah Nusantara</title>
+    <link rel="stylesheet" href="projek_uts/projek.css">
+</head>
+
+<body>
+    <header>
+        <div class="slideshow-container">
+            <h1>Indah Nusantara</h1>
+            <div class="mySlides fade">
+                <img src="bahan/foto1.jpg" alt="Gambar 1" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="bahan/foto2.jpg" alt="Gambar 2" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="bahan/foto3.jpg" alt="Gambar 3" style="width:100%">
+            </div>  
+        </div>
+    
+        <script>
+            let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000); 
+    }
+        </script>
+        </header>
+
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Indah Nusantara</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#login">Tentang Kami</a></li>
+                <li><a href="#login">Destinasi</a></li>
+                <li><a href="#login">Paket Wisata</a></li>
+                <li><a href="#login">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="login" class="login">
+            <div class="login-container">
+    <div class="login-box">
+      <h2>LOGIN</h2>
+      <form action="projek_uts/projek.html" method="get">
+
+        <div class="input-group">
+          <input type="text" id="username" name="username" required placeholder="Username">
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" name="password" required placeholder="Password">
+          <button type="submit">Masuk</button>
+        </div>
+        </form>
+  </div> 
+  </div>
+        </section>
+        
+        <footer>
+            <section id="kontak" class="kontak">
+                <h3>Kontak</h3>
+                <div class="medsos">
+                    <a href="https://wa.me/087845714215" target="_blank">
+                        <img src="projek_uts/bahan/wa.png" alt="WhatsApp" title="Hubungi kami melalui WhatsApp">
+                    </a>
+                    <a href="https://www.instagram.com/ahmdd_yudistira" target="_blank">
+                        <img src="projek_uts/bahan/ig.png" alt="Instagram" title="Follow kami di Instagram">
+                    </a>
+                    <a href="https://t.me/Ramdanee25" target="_blank">
+                        <img src="projek_uts/bahan/tele.png" alt="Telegram" title="Hubungi kami melalui Telegram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmad-yudistira-ramdhany-5b934633b" target="_blank">
+                        <img src="projek_uts/bahan/linkedin.png" alt="linkedin" title="Hubungi kami melalui linkedin">
+                    </a> 
+                </div>
+               </section>
+            <p>&copy; 2024 Indah Nusantara. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
