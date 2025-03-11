@@ -8,7 +8,7 @@
                 ?>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Projek UTS</h1>
+                    <h1 class="mt-4"></h1>
                     <?php
                     include_once 'projek_uts/login.html';
                     ?>
