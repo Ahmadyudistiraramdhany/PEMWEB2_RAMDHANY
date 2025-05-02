@@ -34,54 +34,43 @@ require_once '../dbkoneksi.php';
         <!-- Sidebar -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index.php" class="brand-link">
-                <img src="https://adminlte.io/themes/v3/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">PUSKESMAS </span>
+            <a href="#" class="brand-link">
+                <i class="fas fa-clinic-medical brand-image img-circle elevation-3"></i>
+                <span class="brand-text font-weight-light">PUSKESMAS</span>
             </a>
 
             <!-- Sidebar Menu -->
             <div class="sidebar">
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <li class="nav-item">
+                    <li class="nav-item">
                             <a href="../kelurahan/list_kelurahan.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Kelurahan
-                                </p>
+                                <i class="nav-icon fas fa-map-marked-alt"></i>
+                                <p>Kelurahan</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="../paramedik/list_paramedik.php" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
-                                <p>
-                                    Paramedik
-                                </p>
+                                <i class="nav-icon fas fa-user-md"></i>
+                                <p>Paramedik</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="../pasien/list_pasien.php" class="nav-link">
-                                <i class="nav-icon fas fa-cogs"></i>
-                                <p>
-                                    Pasien
-                                </p>
+                                <i class="nav-icon fas fa-procedures"></i>
+                                <p>Pasien</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="../periksa/list_periksa.php" class="nav-link">
-                                <i class="nav-icon fas fa-cogs"></i>
-                                <p>
-                                    Periksa
-                                </p>
+                                <i class="nav-icon fas fa-notes-medical"></i>
+                                <p>Periksa</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="../unit_kerja/list_unit.php" class="nav-link">
-                                <i class="nav-icon fas fa-cogs"></i>
-                                <p>
-                                    Unit
-                                </p>
+                                <i class="nav-icon fas fa-building"></i>
+                                <p>Unit Kerja</p>
                             </a>
                         </li>
                     </ul>
