@@ -1,23 +1,24 @@
 <?php
 require_once '../dbkoneksi.php';
 
-// Aktifkan error reporting (untuk debugging jika diperlukan)
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
 // Tangkap data dari form
 $_nama_kelurahan = $_POST['nama'] ?? null;
 $_proses = $_POST['proses'] ?? null;
+$id_edit = $_POST['id_edit'] ?? null;
 
 // Proses Hapus
-if (isset($_GET['Hapus']) && isset($_GET['id'])) {
+if (isset($_GET['hapus']) && isset($_GET['id'])) {
     $id = $_GET['id'];
+    
+    // Pastikan query DELETE hanya menghapus berdasarkan ID
     $sql = "DELETE FROM kelurahan WHERE id = ?";
     $stmt = $dbh->prepare($sql);
     $stmt->execute([$id]);
+    
+    // Redirect ke list kelurahan setelah berhasil dihapus
     header("Location: list_kelurahan.php");
     exit();
-}
+} 
 
 // Proses Simpan
 if ($_proses === "simpan") {
@@ -30,13 +31,7 @@ if ($_proses === "simpan") {
 }
 
 // Proses Update
-if ($_proses === "Update") {
-    $id_edit = $_POST['id_edit'] ?? null;
-
-    if (!$id_edit) {
-        die("ID kelurahan tidak ditemukan untuk update.");
-    }
-
+if ($_proses === "Update" && $id_edit) {
     $sql = "UPDATE kelurahan SET nama_kelurahan = ? WHERE id = ?";
     $ar_data = [$_nama_kelurahan, $id_edit];
     $stmt = $dbh->prepare($sql);

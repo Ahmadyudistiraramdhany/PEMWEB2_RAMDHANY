@@ -96,18 +96,17 @@ require_once '../dbkoneksi.php';
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-
-                        <!-- Card: Pasien -->
+                        <!-- Card: Kelurahan -->
                         <div class="col-lg-3 col-6">
-                            <div class="small-box bg-info">
+                            <div class="small-box bg-danger">
                                 <div class="inner">
-                                    <h4>Pasien</h4>
-                                    <p>Data Pasien</p>
+                                    <h4>Kelurahan</h4>
+                                    <p>Wilayah Kerja</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="fas fa-procedures"></i>
+                                    <i class="fas fa-map-marked-alt"></i>
                                 </div>
-                                <a href="../pasien/list_pasien.php" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="../kelurahan/list_kelurahan.php" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
 
@@ -125,6 +124,20 @@ require_once '../dbkoneksi.php';
                             </div>
                         </div>
 
+                         <!-- Card: Pasien -->
+                         <div class="col-lg-3 col-6">
+                            <div class="small-box bg-info">
+                                <div class="inner">
+                                    <h4>Pasien</h4>
+                                    <p>Data Pasien</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-procedures"></i>
+                                </div>
+                                <a href="../pasien/list_pasien.php" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+
                         <!-- Card: Periksa -->
                         <div class="col-lg-3 col-6">
                             <div class="small-box bg-warning">
@@ -135,23 +148,10 @@ require_once '../dbkoneksi.php';
                                 <div class="icon">
                                     <i class="fas fa-notes-medical"></i>
                                 </div>
-                                <a href="../paramedik/list_periksa.php" class="small-box-footer"><span class="inner text-white">Lihat Detail</span> <i class="fas fa-arrow-circle-right text-white"></i></a>
+                                <a href="../periksa/list_periksa.php" class="small-box-footer"><span class="inner text-white">Lihat Detail</span> <i class="fas fa-arrow-circle-right text-white"></i></a>
                                 </div>
                         </div>
 
-                        <!-- Card: Kelurahan -->
-                        <div class="col-lg-3 col-6">
-                            <div class="small-box bg-danger">
-                                <div class="inner">
-                                    <h4>Kelurahan</h4>
-                                    <p>Wilayah Kerja</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-map-marked-alt"></i>
-                                </div>
-                                <a href="../kelurahan/list_kelurahan.php" class="small-box-footer">Lihat Detail <i class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
                         <!-- Card: Unit Kerja -->
                         <div class="col-lg-3 col-6">
                             <div class="small-box bg-primary">
